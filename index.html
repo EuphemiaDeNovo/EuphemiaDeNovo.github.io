@@ -11,6 +11,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title>Using display property</title>
+		<style>
+			#popupDialog {
+		            display: none;
+		            position: fixed;
+		            top: 50%;
+		            left: 50%;
+		            transform: translate(-50%, -50%);
+		            padding: 20px;
+		            background-color: #fff;
+		            border: 1px solid #ccc;
+		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		            z-index: 1000;
+		        }
+		
+		        #overlay {
+		            display: none;
+		            position: fixed;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: rgba(0, 0, 0, 0.5);
+		            z-index: 999;
+		        }
+		
+		        h1 {
+		            color: green;
+		        }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -73,7 +103,6 @@
 									<li>
 										<span class="image"><img src="images/Capture_and_Captivation.jpg" alt="" /></span>
 										<h3><b>Capture and Captivation</b></h3>
-										<h3>Out now on Kindle Unlimited<h3>
 										<p>In the neon-lit labyrinth of Dagmar-1, Vexauna Strange fights to survive as a bounty hunter in crime ridden streets. But mere 
 											survival isn’t enough for Vexauna. She craves more—a life beyond the shadows. Fate intervenes when an irresistible contract 
 											lands in her lap; hunt down the enigmatic gangster, Nova Kane. With pressure mounting the mission takes an unexpected turn and Vex finds herself having 
@@ -87,7 +116,6 @@
 									<li>
 										<span class="image"><img src="images/Alchemy_Cover_4.jpeg" alt="" /></span>
 										<h3><b>The Alchemy of Waves and Saltwater</b></h3>
-										<h3> Coming June 30th <h3>
 										<p>Sofie Carter has fled her painful past, leaving behind an abusive family. In the quaint seaside village of Pacifica Bay, 
 											Washington, she finds solace—a new apartment, a fresh start, and the promise of the life she’s always dreamed of. 
 											But fate intervenes when she has an unexpected ‘meet cute’ with Jessie, the town hermit—an enigmatic man who lives 
@@ -100,10 +128,54 @@
 
 									</li>
 									<li>
-										<span class="image"><img src="images/glitch.jpg" alt="" /></span>
+										<span class="image"><img src="images/Read_Between_the_Pines_Cover_2 - website.jpg" alt="" /></span>
 										<h3><b>Read Between the Pines</b></h3>
-										<h3>In the works<h3>
 										<p>Coming soon! Keep an eye out for this next hot read!</p>
+										<button onclick="popupFn()">
+										        Blurb
+										</button>
+										<div id="overlay"></div>
+										<div id="popupDialog">
+										<p>Are your bags packed and ready for an extended trip to Havenwood, Washington?
+
+										Evie Shaw is determined to leave her past behind, including a disappointing life and an unfaithful fiancé. 
+										After discovering his affair with her best friend, she cuts all ties and starts anew. 
+										With a charming new home, a job she loves, and an unexpectedly supportive online follower, 
+										Evie is ready for a fresh start. But little does she know, a secret admirer is watching her every move…
+
+									
+										Samuel Lawson has loved Evie since childhood. 
+										Once inseparable, a series of unfortunate events drove them apart. 
+										For years, his only connection to her was through her online streams, hidden behind an alias. 
+										Those close to Evie ensured it was his only option. Now, a decade later, with the obstacles that 
+										once kept them apart finally gone, Sam is free to make his move. He will stop at nothing to rekindle 
+										their bond… no matter what it takes.</p>
+										<button onclick="closeFn()">
+										        Close
+										</button>
+										</div>
+										<script>
+										function popupFn() {
+										        document.getElementById(
+										        	"overlay"
+										        ).style.display = "block";
+										        document.getElementById(
+										                "popupDialog"
+										        ).style.display = "block";
+										}
+										function closeFn() {
+										        document.getElementById(
+										                "overlay"
+										        ).style.display = "none";
+										        document.getElementById(
+										                "popupDialog"
+										        ).style.display = "none";
+										}
+										    </script>
+										<ul class="icons">
+											<li><a href="https://www.amazon.com/Read-Between-Pines-Cascadia-Connections-ebook/dp/B0DF37Y6VD/ref=sr_1_3?crid=K5TBGYSV1G56&dib=eyJ2IjoiMSJ9.uoQx4VQOl8PKhqSUd60tUEocBQtUK5SWlkKOOtIbbcv740BHySo5m5cu1G8669zXHX33OFHQZwaYeOi5toVNkux_HiHThWah9xwVlTqhWZCBsrxHpXtXQ4aUsmv3_IOPbrLADe8fDeuqk70Ve_A_8STfQFup5AfpXbp7beSl73L51fxLPlnQmesHqzlpTuGz.PH9Uzf1GcB3RWa6AhrfOKKeO-AjYOTCL2QgbFH8O-TI&dib_tag=se&keywords=read+between+the+pines&qid=1729032987&s=digital-text&sprefix=read+between+the+pines%2Cdigital-text%2C138&sr=1-3" class="icon brands fa-amazon alt"><span class="label">Amazon</span></a></li>
+									
+										</ul>	
 									</li>
 								</ul>
 					
