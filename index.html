@@ -37,6 +37,132 @@
 		            z-index: 999;
 			    margin-bottom: 10px;
 		        }
+
+			#popupDialog2 {
+		            display: none;
+		            position: fixed;
+		            top: 50%;
+		            left: 50%;
+		            transform: translate(-50%, -50%);
+		            padding: 20px;
+		            background-color: #fff;
+		            border: 1px solid #ccc;
+		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		            z-index: 1000;
+		        }
+		
+		        #overlay2 {
+		            display: none;
+		            position: fixed;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: rgba(0, 0, 0, 0.5);
+		            z-index: 999;
+			    margin-bottom: 10px;
+		        }
+
+			#popupDialog3 {
+		            display: none;
+		            position: fixed;
+		            top: 50%;
+		            left: 50%;
+		            transform: translate(-50%, -50%);
+		            padding: 20px;
+		            background-color: #fff;
+		            border: 1px solid #ccc;
+		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		            z-index: 1000;
+		        }
+		
+		        #overlay3 {
+		            display: none;
+		            position: fixed;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: rgba(0, 0, 0, 0.5);
+		            z-index: 999;
+			    margin-bottom: 10px;
+		        }
+
+			#popupDialog4 {
+		            display: none;
+		            position: fixed;
+		            top: 50%;
+		            left: 50%;
+		            transform: translate(-50%, -50%);
+		            padding: 20px;
+		            background-color: #fff;
+		            border: 1px solid #ccc;
+		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		            z-index: 1000;
+		        }
+		
+		        #overlay4 {
+		            display: none;
+		            position: fixed;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: rgba(0, 0, 0, 0.5);
+		            z-index: 999;
+			    margin-bottom: 10px;
+		        }
+
+			#popupDialog5 {
+		            display: none;
+		            position: fixed;
+		            top: 50%;
+		            left: 50%;
+		            transform: translate(-50%, -50%);
+		            padding: 20px;
+		            background-color: #fff;
+		            border: 1px solid #ccc;
+		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		            z-index: 1000;
+		        }
+		
+		        #overlay5 {
+		            display: none;
+		            position: fixed;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: rgba(0, 0, 0, 0.5);
+		            z-index: 999;
+			    margin-bottom: 10px;
+		        }
+
+			#popupDialog6 {
+		            display: none;
+		            position: fixed;
+		            top: 50%;
+		            left: 50%;
+		            transform: translate(-50%, -50%);
+		            padding: 20px;
+		            background-color: #fff;
+		            border: 1px solid #ccc;
+		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		            z-index: 1000;
+		        }
+		
+		        #overlay6 {
+		            display: none;
+		            position: fixed;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: rgba(0, 0, 0, 0.5);
+		            z-index: 999;
+			    margin-bottom: 10px;
+		        }
+			
 		        h1 {
 		            color: white;
 		        }
@@ -103,20 +229,7 @@
 									<li>
 										<span class="image"><img src="images/Capture_and_Captivation.jpg" alt="" /></span>
 										<h3><b>Capture and Captivation</b></h3>
-										<p>In the neon-lit labyrinth of Dagmar-1, Vexauna Strange fights to survive as a bounty hunter in crime ridden streets. But mere 
-											survival isn’t enough for Vexauna. She craves more—a life beyond the shadows. Fate intervenes when an irresistible contract 
-											lands in her lap; hunt down the enigmatic gangster, Nova Kane. With pressure mounting the mission takes an unexpected turn and Vex finds herself having 
-											to outrun her target. Now Kane and a mysterious figure from the shadows are hot on her trail. In a city where loyalty is 
-											a currency and love can be a fatal weakness, Vexauna must choose: sacrifice her heart or potentially lose everything she holds dear.</p>
-										<ul class="icons">
-											<li><a href="https://www.amazon.com/Capture-Captivation-Euphemia-Novo-ebook/dp/B0CZV2TWTV?ref_=ast_author_mpb" class="icon brands fa-amazon alt"><span class="label">Amazon</span></a></li>
-									
-										</ul>
-									</li>
-									<li>
-										<span class="image"><img src="images/Alchemy_Cover_4.jpeg" alt="" /></span>
-										<h3><b>The Alchemy of Waves and Saltwater</b></h3>
-										<button onclick="popupFn4()">
+										<button onclick="popupFn()">
 										        Triggers and Tropes
 										</button>
 										<div id="overlay"></div>
@@ -131,137 +244,6 @@
 										<p>* He falls first and harder</p>
 										<p>* Talk me through it</p>
 										<p>* Happily ever after</p>
-										<button onclick="closeFn4()">
-										        Close
-										</button>
-										</div>
-										<script>
-										function popupFn4() {
-										        document.getElementById(
-										        	"overlay"
-										        ).style.display = "block";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "block";
-										}
-										function closeFn4() {
-										        document.getElementById(
-										                "overlay"
-										        ).style.display = "none";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "none";
-										}
-										</script>
-										<h3>           </h3>
-										<button onclick="popupFn3()">
-										        Blurb
-										</button>
-										<div id="overlay"></div>
-										<div id="popupDialog">
-										<p>Sofie Carter has fled her painful past, leaving behind an abusive family. In the quaint seaside village of Pacifica Bay, Washington, 
-											she finds solace—a new apartment, a fresh start, and the promise of the life she’s always dreamed of.
-
-											But fate intervenes when she has an unexpected ‘meet cute’ with Jessie, the town hermit—an enigmatic man who lives in the shadow of his 
-											own painful past. As Sofie grapples with newfound desires, her family’s unwelcome intrusion threatens to unravel everything she’s built.
-
-											Jessie Holden, a man who has always kept his distance, discovers a reason to break free from solitude. The arrival of the town’s 
-											beautiful barista ignites a spark within him—one he never knew existed. Smitten beyond measure, he refuses to envision a future without her. 
-											Yet, as their connection deepens, external forces conspire against them. Sofie’s family looms, threatening their fragile bond. 
-											Can Jessie protect her, or will their love be swept away like the tide?</p>
-										<button onclick="closeFn3()">
-										        Close
-										</button>
-										</div>
-										<script>
-										function popupFn3() {
-										        document.getElementById(
-										        	"overlay"
-										        ).style.display = "block";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "block";
-										}
-										function closeFn3() {
-										        document.getElementById(
-										                "overlay"
-										        ).style.display = "none";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "none";
-										}
-										</script>
-										<h3>           </h3>
-										<ul class="icons">
-											<li><a href="https://www.amazon.com/Alchemy-Waves-Saltwater-Tides-Love-ebook/dp/B0D5CRKBBX/ref=sr_1_1?crid=3FBHHYTCF2UMS&dib=eyJ2IjoiMSJ9.JrlUkgDNMI5jlq3JCIzwvx-dbDRRYEcFh1wLieDQLtVhi0NTzFjIEWp1HAeMrOBT.Yzzxs1vzsYWjVdSz6kT9sHiFGXiV8BekQBC0xL05piM&dib_tag=se&keywords=The+Alchemy+of+Waves+and+Saltwater&qid=1717647997&s=digital-text&sprefix=the+alchemy+of+waves+and+saltwater%2Cdigital-text%2C117&sr=1-1" class="icon brands fa-amazon alt"><span class="label">Amazon</span></a></li>
-									
-										</ul>
-
-									</li>
-									<li>
-										<span class="image"><img src="images/Read_Between_the_Pines_Cover_2 - website.jpg" alt="" /></span>
-										<h3><b>Read Between the Pines</b></h3>
-										<button onclick="popupFn2()">
-										        Triggers and Tropes
-										</button>
-										<div id="overlay"></div>
-										<div id="popupDialog">
-										<p><b>Triggers and Tropes:</b></p>
-										<p>* Stalking</p>
-										<p>* FMC being cheated on (not by MMC)</p>
-										<p>* Mild dubcon</p>
-										<p>* Unhealthy family dynamics</p>
-										<p>* Second chances</p>
-										<p>* Starting over in a small town</p>
-										<p>* Pregnancy</p>
-										<p>* Masked men</p>
-										<p>* Blindfolding</p>
-										<p>* Semi public sex</p>
-										<p>* He falls first and harder</p>
-										<p>* Talk me through it</p>
-										<p>* Happily ever after</p>
-										<button onclick="closeFn2()">
-										        Close
-										</button>
-										</div>
-										<script>
-										function popupFn2() {
-										        document.getElementById(
-										        	"overlay"
-										        ).style.display = "block";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "block";
-										}
-										function closeFn2() {
-										        document.getElementById(
-										                "overlay"
-										        ).style.display = "none";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "none";
-										}
-										</script>
-										<h3>           </h3>
-										<button onclick="popupFn()">
-										        Blurb
-										</button>
-										<div id="overlay"></div>
-										<div id="popupDialog">
-										<p>Are your bags packed and ready for an extended trip to Havenwood, Washington?
-
-										Evie Shaw is determined to leave her past behind, including a disappointing life and an unfaithful fiancé. 
-										After discovering his affair with her best friend, she cuts all ties and starts anew. 
-										With a charming new home, a job she loves, and an unexpectedly supportive online follower, 
-										Evie is ready for a fresh start. But little does she know, a secret admirer is watching her every move…
-
-									
-										Samuel Lawson has loved Evie since childhood. 
-										Once inseparable, a series of unfortunate events drove them apart. 
-										For years, his only connection to her was through her online streams, hidden behind an alias. 
-										Those close to Evie ensured it was his only option. Now, a decade later, with the obstacles that 
-										once kept them apart finally gone, Sam is free to make his move. He will stop at nothing to rekindle 
-										their bond… no matter what it takes.</p>
 										<button onclick="closeFn()">
 										        Close
 										</button>
@@ -281,6 +263,216 @@
 										        ).style.display = "none";
 										        document.getElementById(
 										                "popupDialog"
+										        ).style.display = "none";
+										}
+										</script>
+										<h3>           </h3>
+										<button onclick="popupFn2()">
+										        Blurb
+										</button>
+										<div id="overlay2"></div>
+										<div id="popupDialog2">
+										<p>In the neon-lit labyrinth of Dagmar-1, Vexauna Strange fights to survive as a bounty hunter in crime ridden streets. But mere 
+											survival isn’t enough for Vexauna. She craves more—a life beyond the shadows. Fate intervenes when an irresistible contract 
+											lands in her lap; hunt down the enigmatic gangster, Nova Kane. With pressure mounting the mission takes an unexpected turn and Vex finds herself having 
+											to outrun her target. Now Kane and a mysterious figure from the shadows are hot on her trail. In a city where loyalty is 
+											a currency and love can be a fatal weakness, Vexauna must choose: sacrifice her heart or potentially lose everything she holds dear.</p>
+										<button onclick="closeFn2()">
+										        Close
+										</button>
+										</div>
+										<script>
+										function popupFn2() {
+										        document.getElementById(
+										        	"overlay2"
+										        ).style.display = "block";
+										        document.getElementById(
+										                "popupDialog2"
+										        ).style.display = "block";
+										}
+										function closeFn2() {
+										        document.getElementById(
+										                "overlay2"
+										        ).style.display = "none";
+										        document.getElementById(
+										                "popupDialog2"
+										        ).style.display = "none";
+										}
+										</script>
+										<h3>           </h3>
+										<ul class="icons">
+											<li><a href="https://www.amazon.com/Capture-Captivation-Euphemia-Novo-ebook/dp/B0CZV2TWTV?ref_=ast_author_mpb" class="icon brands fa-amazon alt"><span class="label">Amazon</span></a></li>
+									
+										</ul>
+									</li>
+									<li>
+										<span class="image"><img src="images/Alchemy_Cover_4.jpeg" alt="" /></span>
+										<h3><b>The Alchemy of Waves and Saltwater</b></h3>
+										<button onclick="popupFn3()">
+										        Triggers and Tropes
+										</button>
+										<div id="overlay3"></div>
+										<div id="popupDialog3">
+										<p><b>Triggers and Tropes:</b></p>
+										<p>* Stalking</p>
+										<p>* Unhealthy family dynamics</p>
+										<p>* Second chances</p>
+										<p>* Found family</p>
+										<p>* Starting over in a small town</p>
+										<p>* Pregnancy</p>
+										<p>* He falls first and harder</p>
+										<p>* Talk me through it</p>
+										<p>* Happily ever after</p>
+										<button onclick="closeFn3()">
+										        Close
+										</button>
+										</div>
+										<script>
+										function popupFn3() {
+										        document.getElementById(
+										        	"overlay3"
+										        ).style.display = "block";
+										        document.getElementById(
+										                "popupDialog3"
+										        ).style.display = "block";
+										}
+										function closeFn3() {
+										        document.getElementById(
+										                "overlay3"
+										        ).style.display = "none";
+										        document.getElementById(
+										                "popupDialog3"
+										        ).style.display = "none";
+										}
+										</script>
+										<h3>           </h3>
+										<button onclick="popupFn4()">
+										        Blurb
+										</button>
+										<div id="overlay4"></div>
+										<div id="popupDialog4">
+										<p>Sofie Carter has fled her painful past, leaving behind an abusive family. In the quaint seaside village of Pacifica Bay, Washington, 
+											she finds solace—a new apartment, a fresh start, and the promise of the life she’s always dreamed of.
+
+											But fate intervenes when she has an unexpected ‘meet cute’ with Jessie, the town hermit—an enigmatic man who lives in the shadow of his 
+											own painful past. As Sofie grapples with newfound desires, her family’s unwelcome intrusion threatens to unravel everything she’s built.
+
+											Jessie Holden, a man who has always kept his distance, discovers a reason to break free from solitude. The arrival of the town’s 
+											beautiful barista ignites a spark within him—one he never knew existed. Smitten beyond measure, he refuses to envision a future without her. 
+											Yet, as their connection deepens, external forces conspire against them. Sofie’s family looms, threatening their fragile bond. 
+											Can Jessie protect her, or will their love be swept away like the tide?</p>
+										<button onclick="closeFn4()">
+										        Close
+										</button>
+										</div>
+										<script>
+										function popupFn4() {
+										        document.getElementById(
+										        	"overlay4"
+										        ).style.display = "block";
+										        document.getElementById(
+										                "popupDialog4"
+										        ).style.display = "block";
+										}
+										function closeFn4() {
+										        document.getElementById(
+										                "overlay4"
+										        ).style.display = "none";
+										        document.getElementById(
+										                "popupDialog4"
+										        ).style.display = "none";
+										}
+										</script>
+										<h3>           </h3>
+										<ul class="icons">
+											<li><a href="https://www.amazon.com/Alchemy-Waves-Saltwater-Tides-Love-ebook/dp/B0D5CRKBBX/ref=sr_1_1?crid=3FBHHYTCF2UMS&dib=eyJ2IjoiMSJ9.JrlUkgDNMI5jlq3JCIzwvx-dbDRRYEcFh1wLieDQLtVhi0NTzFjIEWp1HAeMrOBT.Yzzxs1vzsYWjVdSz6kT9sHiFGXiV8BekQBC0xL05piM&dib_tag=se&keywords=The+Alchemy+of+Waves+and+Saltwater&qid=1717647997&s=digital-text&sprefix=the+alchemy+of+waves+and+saltwater%2Cdigital-text%2C117&sr=1-1" class="icon brands fa-amazon alt"><span class="label">Amazon</span></a></li>
+									
+										</ul>
+
+									</li>
+									<li>
+										<span class="image"><img src="images/Read_Between_the_Pines_Cover_2 - website.jpg" alt="" /></span>
+										<h3><b>Read Between the Pines</b></h3>
+										<button onclick="popupFn5()">
+										        Triggers and Tropes
+										</button>
+										<div id="overlay5"></div>
+										<div id="popupDialog5">
+										<p><b>Triggers and Tropes:</b></p>
+										<p>* Stalking</p>
+										<p>* FMC being cheated on (not by MMC)</p>
+										<p>* Mild dubcon</p>
+										<p>* Unhealthy family dynamics</p>
+										<p>* Second chances</p>
+										<p>* Starting over in a small town</p>
+										<p>* Pregnancy</p>
+										<p>* Masked men</p>
+										<p>* Blindfolding</p>
+										<p>* Semi public sex</p>
+										<p>* He falls first and harder</p>
+										<p>* Talk me through it</p>
+										<p>* Happily ever after</p>
+										<button onclick="closeFn5()">
+										        Close
+										</button>
+										</div>
+										<script>
+										function popupFn5() {
+										        document.getElementById(
+										        	"overlay5"
+										        ).style.display = "block";
+										        document.getElementById(
+										                "popupDialog5"
+										        ).style.display = "block";
+										}
+										function closeFn5() {
+										        document.getElementById(
+										                "overlay5"
+										        ).style.display = "none";
+										        document.getElementById(
+										                "popupDialog5"
+										        ).style.display = "none";
+										}
+										</script>
+										<h3>           </h3>
+										<button onclick="popupFn6()">
+										        Blurb
+										</button>
+										<div id="overlay6"></div>
+										<div id="popupDialog6">
+										<p>Are your bags packed and ready for an extended trip to Havenwood, Washington?
+
+										Evie Shaw is determined to leave her past behind, including a disappointing life and an unfaithful fiancé. 
+										After discovering his affair with her best friend, she cuts all ties and starts anew. 
+										With a charming new home, a job she loves, and an unexpectedly supportive online follower, 
+										Evie is ready for a fresh start. But little does she know, a secret admirer is watching her every move…
+
+									
+										Samuel Lawson has loved Evie since childhood. 
+										Once inseparable, a series of unfortunate events drove them apart. 
+										For years, his only connection to her was through her online streams, hidden behind an alias. 
+										Those close to Evie ensured it was his only option. Now, a decade later, with the obstacles that 
+										once kept them apart finally gone, Sam is free to make his move. He will stop at nothing to rekindle 
+										their bond… no matter what it takes.</p>
+										<button onclick="closeFn6()">
+										        Close
+										</button>
+										</div>
+										<script>
+										function popupFn6() {
+										        document.getElementById(
+										        	"overlay6"
+										        ).style.display = "block";
+										        document.getElementById(
+										                "popupDialog6"
+										        ).style.display = "block";
+										}
+										function closeFn6() {
+										        document.getElementById(
+										                "overlay6"
+										        ).style.display = "none";
+										        document.getElementById(
+										                "popupDialog6"
 										        ).style.display = "none";
 										}
 										</script>
