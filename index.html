@@ -13,160 +13,14 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<title>Using display property</title>
 		<style>
-			#popupDialog {
-		            display: none;
-		            position: fixed;
-		            top: 50%;
-		            left: 50%;
-		            transform: translate(-50%, -50%);
-		            padding: 20px;
-		            background-color: #fff;
-		            border: 1px solid #ccc;
-		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		            z-index: 1000;
+		        .center {
+		            text-align: center;
 		        }
-		
-		        #overlay {
-		            display: none;
-		            position: fixed;
-		            top: 0;
-		            left: 0;
-		            width: 100%;
-		            height: 100%;
-		            background: rgba(0, 0, 0, 0.5);
-		            z-index: 999;
-			    margin-bottom: 10px;
-		        }
-
-			#popupDialog2 {
-		            display: none;
-		            position: fixed;
-		            top: 50%;
-		            left: 50%;
-		            transform: translate(-50%, -50%);
-		            padding: 20px;
-		            background-color: #fff;
-		            border: 1px solid #ccc;
-		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		            z-index: 1000;
-		        }
-		
-		        #overlay2 {
-		            display: none;
-		            position: fixed;
-		            top: 0;
-		            left: 0;
-		            width: 100%;
-		            height: 100%;
-		            background: rgba(0, 0, 0, 0.5);
-		            z-index: 999;
-			    margin-bottom: 10px;
-		        }
-
-			#popupDialog3 {
-		            display: none;
-		            position: fixed;
-		            top: 50%;
-		            left: 50%;
-		            transform: translate(-50%, -50%);
-		            padding: 20px;
-		            background-color: #fff;
-		            border: 1px solid #ccc;
-		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		            z-index: 1000;
-		        }
-		
-		        #overlay3 {
-		            display: none;
-		            position: fixed;
-		            top: 0;
-		            left: 0;
-		            width: 100%;
-		            height: 100%;
-		            background: rgba(0, 0, 0, 0.5);
-		            z-index: 999;
-			    margin-bottom: 10px;
-		        }
-
-			#popupDialog4 {
-		            display: none;
-		            position: fixed;
-		            top: 50%;
-		            left: 50%;
-		            transform: translate(-50%, -50%);
-		            padding: 20px;
-		            background-color: #fff;
-		            border: 1px solid #ccc;
-		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		            z-index: 1000;
-		        }
-		
-		        #overlay4 {
-		            display: none;
-		            position: fixed;
-		            top: 0;
-		            left: 0;
-		            width: 100%;
-		            height: 100%;
-		            background: rgba(0, 0, 0, 0.5);
-		            z-index: 999;
-			    margin-bottom: 10px;
-		        }
-
-			#popupDialog5 {
-		            display: none;
-		            position: fixed;
-		            top: 50%;
-		            left: 50%;
-		            transform: translate(-50%, -50%);
-		            padding: 20px;
-		            background-color: #fff;
-		            border: 1px solid #ccc;
-		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		            z-index: 1000;
-		        }
-		
-		        #overlay5 {
-		            display: none;
-		            position: fixed;
-		            top: 0;
-		            left: 0;
-		            width: 100%;
-		            height: 100%;
-		            background: rgba(0, 0, 0, 0.5);
-		            z-index: 999;
-			    margin-bottom: 10px;
-		        }
-
-			#popupDialog6 {
-		            display: none;
-		            position: fixed;
-		            top: 50%;
-		            left: 50%;
-		            transform: translate(-50%, -50%);
-		            padding: 20px;
-		            background-color: #fff;
-		            border: 1px solid #ccc;
-		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		            z-index: 1000;
-		        }
-		
-		        #overlay6 {
-		            display: none;
-		            position: fixed;
-		            top: 0;
-		            left: 0;
-		            width: 100%;
-		            height: 100%;
-		            background: rgba(0, 0, 0, 0.5);
-		            z-index: 999;
-			    margin-bottom: 10px;
-		        }
-			
-		        h1 {
-		            color: white;
-		        }
-		</style>
+			.center-list {
+		            text-align: center;
+		            list-style-position: inside;
+       			}
+    		</style>
 	</head>
 	<body class="is-preload">
 
@@ -229,78 +83,10 @@
 									<li>
 										<span class="image"><img src="images/Capture_and_Captivation.jpg" alt="" /></span>
 										<h3><b>Capture and Captivation</b></h3>
-										<button onclick="popupFn()">
-										        Triggers and Tropes
-										</button>
-										<div id="overlay"></div>
-										<div id="popupDialog">
-										<p><b>Triggers and Tropes:</b></p>
-										<p>* Stalking</p>
-										<p>* Found family</p>
-										<p>* Science fiction</p>
-										<p>* He falls first and harder</p>
-										<p>* Talk me through it</p>
-										<p>* Happily ever after</p>
-										<button onclick="closeFn()">
-										        Close
-										</button>
-										</div>
-										<script>
-										function popupFn() {
-										        document.getElementById(
-										        	"overlay"
-										        ).style.display = "block";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "block";
-										}
-										function closeFn() {
-										        document.getElementById(
-										                "overlay"
-										        ).style.display = "none";
-										        document.getElementById(
-										                "popupDialog"
-										        ).style.display = "none";
-										}
-										</script>
-										<h3>           </h3>
-										<button onclick="popupFn2()">
-										        Blurb
-										</button>
-										<div id="overlay2"></div>
-										<div id="popupDialog2">
-										<p>In the neon-lit labyrinth of Dagmar-1, Vexauna Strange fights to survive as a bounty hunter in crime ridden streets. But mere 
-											survival isn’t enough for Vexauna. She craves more—a life beyond the shadows. Fate intervenes when an irresistible contract 
-											lands in her lap; hunt down the enigmatic gangster, Nova Kane. With pressure mounting the mission takes an unexpected turn and Vex finds herself having 
-											to outrun her target. Now Kane and a mysterious figure from the shadows are hot on her trail. In a city where loyalty is 
-											a currency and love can be a fatal weakness, Vexauna must choose: sacrifice her heart or potentially lose everything she holds dear.</p>
-										<button onclick="closeFn2()">
-										        Close
-										</button>
-										</div>
-										<script>
-										function popupFn2() {
-										        document.getElementById(
-										        	"overlay2"
-										        ).style.display = "block";
-										        document.getElementById(
-										                "popupDialog2"
-										        ).style.display = "block";
-										}
-										function closeFn2() {
-										        document.getElementById(
-										                "overlay2"
-										        ).style.display = "none";
-										        document.getElementById(
-										                "popupDialog2"
-										        ).style.display = "none";
-										}
-										</script>
-										<h3>           </h3>
-										<ul class="icons">
-											<li><a href="https://www.amazon.com/Capture-Captivation-Euphemia-Novo-ebook/dp/B0CZV2TWTV?ref_=ast_author_mpb" class="icon brands fa-amazon alt"><span class="label">Amazon</span></a></li>
-									
+										<ul class="actions special">
+											<li><a href="CaptureandCaptivation.html" class="button">About</a></li>
 										</ul>
+
 									</li>
 									<li>
 										<span class="image"><img src="images/Alchemy_Cover_4.jpeg" alt="" /></span>
@@ -311,11 +97,13 @@
 
 									</li>
 									<li>
+									<div class="center">
 										<span class="image"><img src="images/Read_Between_the_Pines_Cover_2 - website.jpg" alt="" /></span>
 										<h3><b>Read Between the Pines</b></h3>
 										<ul class="actions special">
 											<li><a href="ReadBetweenThePines.html" class="button">About</a></li>
 										</ul>
+									</div>
 
 									</li>
 								</ul>
